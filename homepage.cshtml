@@ -1,0 +1,99 @@
+@page
+@model MistF24A2.Pages.HomepageModel
+@{
+
+    <html>
+
+    <body>
+
+        <h1>
+            Welcome to WellCast
+        </h1>
+       
+        <br />
+   
+        <button>Click here to log in</button>
+        <button>More references for physical health</button>
+         <button>Meet the team</button> 
+        <button id="darkModeToggle" >Dark Mode</button>
+
+       
+        <br />
+        <br />
+
+
+        <h2>Why use us?</h2>
+        <p>This is not meant to scare anyone, there is no need to be scared! This is all so you can live your best
+        life in the most comfortable way possible. Outside exists, and you want to go outside, because there are so
+        many fun, good, and healthy things to do outside, but it is important to take percautions. Thats why we 
+        are here. Here we take information you give us and give you the best advice to live your healthiest life 
+        outside!</p>
+
+        <h2>How can tempeture effect your health?</h2>
+        <p>Temperature extremes can significantly impact health. High temperatures can 
+        lead to heat-related 
+        illnesses like heat exhaustion and heat stroke, dehydration, cardiovascular stress,
+        and exacerbate respiratory conditions such as asthma. Conversely, low temperatures can
+        cause hypothermia and frostbite, increase the risk of heart attacks, and irritate the 
+        respiratory tract. Additionally, rapid temperature fluctuations can weaken the immune
+        system, making individuals more susceptible to infections and exacerbating chronic
+        conditions like arthritis.</p>
+        
+
+        
+            <h2>How do UV rays efffect your health?</h2>
+        <p>Ultraviolet (UV) radiation from the sun can have both beneficial and harmful effects
+        on health. On the positive side, UV exposure helps the body produce vitamin D, which is
+        essential for bone health and immune function. However, excessive UV radiation can lead
+        to skin damage, including sunburn, premature aging, and an increased risk of skin
+        cancers such as melanoma. UV exposure can also cause eye problems, including cataracts
+        and photokeratitis, and suppress the immune system, making the body less effective at 
+        fighting infections. Protecting skin and eyes with appropriate clothing, sunscreen, 
+        and sunglasses is crucial to mitigate these risks..</p>
+        
+
+        
+            <h2>What about allergies from outdoor factors?</h2>
+        <p>Outdoor allergies, often triggered by allergens like pollen, mold, or pollution,
+        can affect health in several ways. Common symptoms include sneezing, runny or stuffy
+        nose, itchy eyes, and throat irritation. These reactions can lead to discomfort and 
+        disruption of daily activities. For individuals with asthma, outdoor allergens can 
+        exacerbate symptoms, leading to increased wheezing, shortness of breath, and coughing.
+        Chronic exposure to outdoor allergens can also contribute to sinusitis or worsening
+        of pre-existing respiratory conditions. Additionally, prolonged exposure to high levels
+        of air pollution, which can accompany high pollen counts, may have long-term effects 
+        on respiratory health and increase the risk of cardiovascular issues. Managing outdoor
+        allergies involves minimizing exposure to allergens, using medications to control
+        symptoms, and staying informed about local pollen counts and air quality.</p>
+        
+
+        
+            <h2>Thats not all, there are many other factors out there!</h2>
+            
+       
+
+        
+           
+
+        <script>
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const body = document.body;
+
+            darkModeToggle.addEventListener('click', function () {
+              body.classList.toggle('dark-mode');
+
+              
+              if (body.classList.contains('dark-mode')) {
+                darkModeToggle.textContent = 'Light Mode';
+                
+              } else {
+                darkModeToggle.textContent = 'Dark Mode';
+               
+              }
+            });
+        </script>
+</body>
+
+    </html>
+
+}
